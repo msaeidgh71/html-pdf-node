@@ -16,7 +16,7 @@ async function generatePdf(file, options, callback) {
 
   const browser = await puppeteer.launch({
     args: args,
-    product: 'firefox'
+    browser: 'firefox'
   });
   const page = await browser.newPage();
 
